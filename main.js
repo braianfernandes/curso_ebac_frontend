@@ -12,6 +12,10 @@ $(document).ready(function() {
         $(novoItem).appendTo('ul');
         $(novoItem).fadeIn(1000);
         $('#tarefa').val('');
+
+        $("ul li").click(function () {
+            $(this).css("text-decoration", "line-through")
+        });
     })
 
 })
